@@ -1,0 +1,42 @@
+.programJumbotron {
+  background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+
+}
+
+.programContent {
+	.diet {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 100px 0;
+
+		.container {
+			padding: 50px 30px;
+			margin-right: 100px;
+			border: none;
+			border-radius: 20px;
+			box-shadow: 3px 0px 14px -1px rgba(0,0,0,0.75);
+			-webkit-box-shadow: 3px 0px 14px -1px rgba(0,0,0,0.75);
+			-moz-box-shadow: 3px 0px 14px -1px rgba(0,0,0,0.75);
+		}
+
+		.diet-container {
+			display: flex;
+			justify-content: space-between;
+			h3 {
+				text-align: center;
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+			p {
+				text-align: left;
+				font-size: 15px;
+			}
+		}
+	}
+}

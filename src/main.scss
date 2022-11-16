@@ -1,0 +1,24 @@
+@import './sass-component/mixins';
+@import './sass-component/var';
+@import './sass-component/global';
+
+// Home component
+@import './components/Navbar/Navbar';
+@import './components/homeComponents/Jumbotron/Jumbotron';
+@import './components/homeComponents/whyChooseUs/WhyUs';
+@import './components/homeComponents/Program/Program';
+@import './components/homeComponents/Carousel/Carousel';
+@import './components/homeComponents/joinUs/JoinUs';
+@import './components/Footer/Footer';
+
+// Program component
+@import './components/programComponent/ProgramPage';
+
+// Olahraga component
+@import './components/olahragaComponents/Jumbotron/Jumbotron';
+@import './components/olahragaComponents//olahragaCard/OlahragaProgram';
+@import './components/olahragaComponents/OlahragaPagi/OlahragaPagi';
+
+// Resep component
+@import './components/resepPage/Jumbotron';
+@import './components/resepPage/RecipeCards';

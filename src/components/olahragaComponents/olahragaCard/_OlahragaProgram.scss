@@ -1,0 +1,89 @@
+.olahragaProgram {
+  .programs {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 50px 0;
+
+		@include breakpoint-down(medium) {
+			flex-direction: column;
+			
+		}
+
+		.program {
+			width: 30%;
+			border: none;
+			border-radius: 20px;
+			box-shadow: 3px 7px 28px -4px rgba(0,0,0,0.48);
+			-webkit-box-shadow: 3px 7px 28px -4px rgba(0,0,0,0.48);
+			-moz-box-shadow: 3px 7px 28px -4px rgba(0,0,0,0.48);
+
+			@include breakpoint-down(medium) {
+				width: 100%;
+				margin-bottom: 50px;
+			}
+			
+			&-image {
+				img {
+					border-top-right-radius: 20px;
+					border-top-left-radius: 20px;
+
+				}
+			}
+
+			&-title {
+				margin-top: 0;
+				padding: 10px 20px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				h3{
+					font-size: 15px;
+				}
+				p {
+					font-size: 10px;
+				}
+			}
+
+			&-detail {
+				padding: 10px 20px 20px 20px;
+				h3 {
+					font-size: 15px;
+					font-weight: normal;
+				}
+				p {
+					font-size: 15px;
+				}
+				.instruction {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin-bottom: 10px;
+				}
+
+				&-list {
+					.list {
+						display: flex;
+						&-text {
+							width: 100%;
+							margin-left: 10px;
+							text-align: start;
+							border-bottom: 1px solid black;
+							.name {
+								margin-bottom: 10px;
+							}
+						}
+					}
+					.button-wraper {
+						button {
+							&:hover {
+								cursor: pointer;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
