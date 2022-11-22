@@ -3,7 +3,7 @@ import ORI1 from '../../../assets/OR1.png'
 
 import {olahraga} from '../../../data/data'
 
-function OlahragaPagi() {
+function Peregangan() {
   return (
     <div className="container">
       <div className="olahraga-wrapper">
@@ -11,11 +11,11 @@ function OlahragaPagi() {
           <img src={ORI1} alt="olahraga pagi" width='40%' />
           <div className="row-text container ">
             <div className="nama">
-              <h3>{olahraga[0].nama}</h3>
-              <p>{olahraga[0].durasi}</p>
+              <h3>{olahraga[1].nama}</h3>
+              <p>{olahraga[1].durasi}</p>
             </div>
             <div className="button">
-              <p>{olahraga[0].deskripsi}</p>
+              <p>{olahraga[1].deskripsi}</p>
               <a href="#">
                 <button type="submit">Mulai</button>
               </a>
@@ -26,7 +26,7 @@ function OlahragaPagi() {
         <div className="instruction">
           <div className="instruction-title">
             <h3>Instruksi</h3>
-            <p>{olahraga[0].jumlahLatihan}</p>
+            <p>{olahraga[1].jumlahLatihan}</p>
           </div>
           <div className="instructions">
               {instructionItems}
@@ -37,10 +37,10 @@ function OlahragaPagi() {
   )
 }
 
-export default OlahragaPagi
+export default Peregangan
 
 const instructionItems = [];
-{olahraga[0].instruksi.forEach((item) => {
+{olahraga[1].instruksi.forEach((item) => {
   instructionItems.push(
     <div className="instuction-item">
       <div className="id" style={{borderRadius: '50%', border: '1px solid black', padding: '3px', marginRight: '10px', width: '30px', height: '30px',display: 'flex', justifyContent:'center', alignItems:'center'}}>

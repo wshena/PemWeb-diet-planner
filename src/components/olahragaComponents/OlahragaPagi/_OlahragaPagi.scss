@@ -1,0 +1,73 @@
+.olahraga-wrapper {
+	width: 100% Impo;
+	border: 1px solid red;
+	border-radius: 20px;
+	.row {
+		display: flex;
+		justify-content: space-between;
+		background-color: #FFC898;
+		border-radius: 20px;
+		img {
+			border-radius: 20px;
+		}
+		
+		.row-text {
+			width: 100%;
+			border-radius: 20px;
+			.nama {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.button {
+				margin: 20px 0;
+				width: 60%;
+				p {
+					margin-bottom: 20px;
+				}
+				button {
+					background-color: #F27405;
+					color: white;
+					border: none;
+					border-radius: 20px;
+					padding: 10px 50px;
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+
+	.instruction {
+		padding: 40px 20px;
+		.instruction-title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 50px;
+			h3,p {
+				font-size: 15px;
+			}
+		}
+
+		.instructions {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			.instuction-item {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 30px;
+				margin-right: 30px;
+
+				.item-name {
+					font-size: 12px;
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+}

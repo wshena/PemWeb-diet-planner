@@ -104,3 +104,133 @@ export const ResepMakanan = [
 		]
 	},
 ]
+
+export const olahraga = [
+	{
+		nama: 'Pemanasan Pagi',
+		deskripsi: 'Bangun dengan energi, agar tubuh anda siap untuk hari ini',
+		durasi: '4-5 Menit',
+		jumlahLatihan: '9 Latihan',
+		gambar: 'src/assets/OR1.png',
+		instruksi: [
+			{
+				id: 1,
+				nama: 'Plank',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/olahragaPagi/plank.png'
+			},
+			{
+				id: 2,
+				nama: 'Kuadrisep Kiri',
+				durasi: '00:30',
+				gambar: 'src/assets/KSK.png'
+			},
+			{
+				id: 3,
+				nama: 'Kuadrisep Kanan',
+				durasi: '00:30',
+				gambar: 'src/assets/KS.png'
+			},
+			{
+				id: 4,
+				nama: 'Bird Dog',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/olahragaPagi/birdDog.png'
+			},
+			{
+				id: 5,
+				nama: 'Sikap Anak',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/olahragaPagi/sikapAnak.png'
+			},
+			{
+				id: 6,
+				nama: 'Push Up Kaki Ditekuk',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/olahragaPagi/pushUpKakiTekuk.png'
+			},
+			{
+				id: 7,
+				nama: 'Crunch Sepeda',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/olahragaPagi/crunchSepeda.png'
+			},
+			{
+				id: 8,
+				nama: 'Peregangan Kobra',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/olahragaPagi/pereganganKobra.png'
+			},
+			{
+				id: 9,
+				nama: 'Papan Angkat Kaki',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/olahragaPagi/papanAngkatKaki.png'
+			},
+		]
+	},
+
+	{
+		nama: 'Peregangan Sebelum Tidur',
+		deskripsi: 'Tenangkan diri anda dan dapatkan tidur berkualitas',
+		durasi: '4-5 Menit',
+		jumlahLatihan: '9 Latihan',
+		gambar: 'src/assets/OR2.png',
+		instruksi: [
+			{
+				id: 1,
+				nama: 'Plank',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/olahragaPagi/plank.png'
+			},
+			{
+				id: 2,
+				nama: 'Tendangan Beralun Terlungkup',
+				durasi: '00:20',
+				gambar: 'src/assets/olahraga/peragangan/tendanganTerlungkup.png'
+			},
+			{
+				id: 3,
+				nama: 'Sisi Lingkaran Kiri',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/peragangan/sisiLingkaranKiri.png'
+			},
+			{
+				id: 4,
+				nama: 'Sisi Lingkaran Kiri',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/peragangan/sisiLingkaranKanan.png'
+			},
+			{
+				id: 5,
+				nama: 'Sikap Anak',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/olahragaPagi/sikapAnak.png'
+			},
+			{
+				id: 6,
+				nama: 'Peragangan Kupu-Kupu Berbaring',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/peragangan/pereganganKupu.png'
+			},
+			{
+				id: 7,
+				nama: 'Bird Dog',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/olahragaPagi/birdDog.png'
+			},
+			{
+				id: 8,
+				nama: 'Peregangan Kobra',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/olahragaPagi/pereganganKobra.png'
+			},
+			{
+				id: 9,
+				nama: 'Superman',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/peregangan/superman.png'
+			},
+		]
+	}
+]
