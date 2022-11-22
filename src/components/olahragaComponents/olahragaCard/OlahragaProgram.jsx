@@ -154,13 +154,13 @@ const programArray = [
 					alignItems: 'center',
 					marginTop: '20px'
 				}}>
-					<button style={{
-						padding: '10px 25px',
-						border: 'none',
-						backgroundColor: '#FEB662'
-					}} onClick={() => {
-						console.log('click')
-					}}>Mulai</button>
+					<a href="/hiit">
+						<button style={{
+							padding: '10px 25px',
+							border: 'none',
+							backgroundColor: '#FEB662'
+						}}>Mulai</button>
+					</a>
 				</div>
 			</div>
 		</div>

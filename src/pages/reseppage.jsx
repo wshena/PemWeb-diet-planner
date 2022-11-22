@@ -75,7 +75,7 @@ const cards = [];
               </div>
             </div>
             <div className="link">
-              <a href="#">Lihat Detail</a>
+              <a href="/resepLanjutan">Lihat Detail</a>
             </div>
           </div>
         </div>

@@ -12,6 +12,8 @@ import ResepPage from "./pages/reseppage";
 import ProgramPage from "./pages/programPage";
 import OlahragaPagi from "./components/olahragaComponents/OlahragaPagi/OlahragaPagi";
 import Peregangan from "./components/olahragaComponents/OlahragaPagi/Peregangan";
+import HiitPembakarLemak from "./components/olahragaComponents/OlahragaPagi/hiitPembakarLemak";
+import ResepPageLanjutan from "./components/resepPage/resepPageLanjutan/resepPageLanjutan";
 
 function App() {
 
@@ -26,6 +28,8 @@ function App() {
         <Route path="resep" element={<ResepPage />} />
         <Route path="olahragaPagi" element={<OlahragaPagi />} />
         <Route path="peregangan" element={<Peregangan />} />
+        <Route path="hiit" element={<HiitPembakarLemak />} />
+        <Route path="resepLanjutan" element={<ResepPageLanjutan />} />
       </Routes>
       <Footer />
     </BrowserRouter>

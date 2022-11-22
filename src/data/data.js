@@ -8,6 +8,7 @@ export const ResepMakanan = [
 		bahan: ["Wortel","Selada","Paprika","Mentimun","Tomat Ceri","Garam & Lada Bubuk"],
 		jumlahBahan: ["55 gram","75 gram","1 buah","60 gram","180 gram","secukupnya"],
 		bg: '/src/assets/makanan/kecil/saladSayur.png',
+		bgBesar: 'src/assets/makanan/besar/saladSayur.png',
 		gambarBahan: [
 			"/src/assets/bahanMakanan/Carrot.png",
 			"/src/assets/bahanMakanan/Cucumber.png",
@@ -39,6 +40,7 @@ export const ResepMakanan = [
 		bahan: ["Oatmeal","Telur","Gula Pasir","Gula Pasir"],
 		jumlahBahan: ["100 gram","1 butir","2 sdm","2 sdm"],
 		bg: "/src/assets/makanan/kecil/pancake.png",
+		bgBesar: 'src/assets/makanan/besar/oatmealPancake.png',
 		gambarBahan: [
 			"/src/assets/bahanMakanan/Porridge.png",
 			"/src/assets/bahanMakanan/EasterEggs.png",
@@ -60,6 +62,7 @@ export const ResepMakanan = [
 		bahan: ["Kentang","Telur","Garam","Gula Pasir"],
 		jumlahBahan: ["200 gram","1 butir","1/2 sdm","2 sdm"],
 		bg: '/src/assets/makanan/kecil/mashedPotato.png',
+		bgBesar: 'src/assets/makanan/besar/meshPotato.png',
 		gambarBahan: [
 			"/src/assets/bahanMakanan/Potato.png",
 			"/src/assets/bahanMakanan/EasterEggs.png",
@@ -81,6 +84,7 @@ export const ResepMakanan = [
 		bahan: ["Ayam","Tomat","Selada","Mentimun"],
 		jumlahBahan: ["200 gram","1 butir","1/2 sdm","2 sdm"],
 		bg: '/src/assets/makanan/kecil/ayamBrokoli.png',
+		bgBesar: 'src/assets/makanan/besar/brokoliAyamLadaHitam.png',
 		gambarBahan: [
 			"/src/assets/bahanMakanan/Chicken.png",
 			"/src/assets/bahanMakanan/Tomato.png",
@@ -96,6 +100,7 @@ export const ResepMakanan = [
 		bahan: ["Ayam","Bombai","Brokoli","Cabai"],
 		jumlahBahan: ["70 gram","1/2 buah","1 buah","secukupnya"],
 		bg: "/src/assets/makanan/kecil/ayamBrokoli.png",
+		bgBesar: 'src/assets/makanan/besar/brokoliAyamLadaHitam.png',
 		gambarBahan: [
 			"/src/assets/bahanMakanan/Chicken.png",
 			"/src/assets/bahanMakanan/Tomato.png",
@@ -229,7 +234,89 @@ export const olahraga = [
 				id: 9,
 				nama: 'Superman',
 				durasi: '00:30',
-				gambar: 'src/assets/olahraga/peregangan/superman.png'
+				gambar: 'src/assets/olahraga/peragangan/superman.png'
+			},
+		]
+	},
+
+	{
+		nama: 'HIIT Pembakar Lemak',
+		deskripsi: 'Latihan dengan intensitas tinggi dengan efek pembakaran lanjut',
+		durasi: '6-7 Menit',
+		jumlahLatihan: '12 Latihan',
+		gambar: 'src/assets/OR3.png',
+		instruksi: [
+			{
+				id: 1,
+				nama: 'Kuadrisep Kiri',
+				durasi: '00:30',
+				gambar: 'src/assets/KSK.png'
+			},
+			{
+				id: 2,
+				nama: 'Kuadrisep kanan',
+				durasi: '00:30',
+				gambar: 'src/assets/KS.png'
+			},
+			{
+				id: 3,
+				nama: 'Tendangan Bokong',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/Hiit/tendanganBokong.png'
+			},
+			{
+				id: 4,
+				nama: 'Putar Pinggul Satu Kaki',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/Hiit/putarPinggulSatuKaki.png'
+			},
+			{
+				id: 5,
+				nama: 'Jongkok Raih Atas',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/Hiit/jongkokRaihAtas.png'
+			},
+			{
+				id: 6,
+				nama: 'Peregangan Betis Kanan',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/Hiit/pereganganBetisKanan.png'
+			},
+			{
+				id: 7,
+				nama: 'Peregangan Betis Kiri',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/Hiit/pereganganBetisKiri.png'
+			},
+			{
+				id: 8,
+				nama: 'Loncat Samping',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/Hiit/loncatSamping.png'
+			},
+			{
+				id: 9,
+				nama: 'Peregangan Kobra',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/olahragaPagi/pereganganKobra.png'
+			},
+			{
+				id: 10,
+				nama: 'Sikap Anak',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/olahragaPagi/sikapAnak.png'
+			},
+			{
+				id: 11,
+				nama: 'Crunch Sepeda',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/olahragaPagi/crunchSepeda.png'
+			},
+			{
+				id: 12,
+				nama: 'Crunch Silang Lengan',
+				durasi: '00:30',
+				gambar: 'src/assets/olahraga/Hiit/crunchSilangLengan.png'
 			},
 		]
 	}
