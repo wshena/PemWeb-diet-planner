@@ -1,10 +1,21 @@
-import React from 'react'
+
+import React, { useState, Component } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import ORI1 from '../../../assets/OR1.png'
 
 import {olahraga} from '../../../data/data'
 
 function OlahragaPagi() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const initModal = () => {
+    return invokeModal(!false)
+  }
   return (
+    <>
     <div className="container">
       <div className="olahraga-wrapper">
         <div className="row">
@@ -16,9 +27,7 @@ function OlahragaPagi() {
             </div>
             <div className="button">
               <p>{olahraga[0].deskripsi}</p>
-              <a href="#">
-                <button type="submit">Mulai</button>
-              </a>
+              <button type="submit">Mulai</button>
             </div>
           </div>
         </div>
@@ -34,6 +43,7 @@ function OlahragaPagi() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

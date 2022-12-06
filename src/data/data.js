@@ -83,13 +83,19 @@ export const ResepMakanan = [
 		porsi: '1 porsi (450 gram)',
 		bahan: ["Ayam","Tomat","Selada","Mentimun"],
 		jumlahBahan: ["200 gram","1 butir","1/2 sdm","2 sdm"],
-		bg: '/src/assets/makanan/kecil/ayamBrokoli.png',
+		bg: 'src/assets/makanan/kecil/chickenSalad.png',
 		bgBesar: 'src/assets/makanan/besar/brokoliAyamLadaHitam.png',
 		gambarBahan: [
 			"/src/assets/bahanMakanan/Chicken.png",
 			"/src/assets/bahanMakanan/Tomato.png",
 			"/src/assets/bahanMakanan/Lettuce.png",
 			"/src/assets/bahanMakanan/Cucumber.png"
+		],
+		langkah: [
+			"Tumis dada ayam tanpa minyak hingga berubah warna",
+			"Tuang saus lada hitam, tuang air secukupnya. Masak hingga matang",
+			"Masukan cabai dan brokoli. Masak sebentar, masukan bawang bombay",
+			"Masak hingga kuah mengental"
 		]
 	},
 	{
@@ -103,9 +109,81 @@ export const ResepMakanan = [
 		bgBesar: 'src/assets/makanan/besar/brokoliAyamLadaHitam.png',
 		gambarBahan: [
 			"/src/assets/bahanMakanan/Chicken.png",
-			"/src/assets/bahanMakanan/Tomato.png",
-			"/src/assets/bahanMakanan/Lettuce.png",
-			"/src/assets/bahanMakanan/Cucumber.png"
+			"src/assets/bahanMakanan/Onion.png",
+			"src/assets/bahanMakanan/Broccoli.png",
+			"src/assets/bahanMakanan/ChiliPepper.png"
+		],
+		langkah: [
+			"Tumis dada ayam tanpa minyak hingga berubah warna",
+			"Tuang saus lada hitam, tuang air secukupnya. Masak hingga matang",
+			"Masukan cabai dan brokoli. Masak sebentar, masukan bawang bombay",
+			"Masak hingga kuah mengental"
+		]
+	},
+	{
+		id: 6,
+		nama: 'Tumis Bayam',
+		durasi: '10 menit',
+		porsi: '1 porsi (4 pcs)',
+		bahan: ["Bayam","Bawang Putih","Bawang Merah","Cabai Rawit"],
+		jumlahBahan: ["1 ikat","3 siung","4 siung","1 buah"],
+		bg: "src/assets/makanan/kecil/tumisBayam.png",
+		bgBesar: 'src/assets/makanan/besar/brokoliAyamLadaHitam.png',
+		gambarBahan: [
+			"src/assets/bahanMakanan/Spinach.png",
+			"src/assets/bahanMakanan/Onion.png",
+			"src/assets/bahanMakanan/redOnion.png",
+			"src/assets/bahanMakanan/ChiliPepper.png"
+		],
+		langkah: [
+			"Tumis dada ayam tanpa minyak hingga berubah warna",
+			"Tuang saus lada hitam, tuang air secukupnya. Masak hingga matang",
+			"Masukan cabai dan brokoli. Masak sebentar, masukan bawang bombay",
+			"Masak hingga kuah mengental"
+		]
+	},
+	{
+		id: 7,
+		nama: 'Sereal Buah',
+		durasi: '10 menit',
+		porsi: '1 porsi (250 gram)',
+		bahan: ["Yogurt","Kiwi","Stroberi","Rasberry"],
+		jumlahBahan: ["180 ml","1 buah","1 buah","1/2 cangkir"],
+		bg: "src/assets/makanan/kecil/serealBuah.png",
+		bgBesar: 'src/assets/makanan/besar/brokoliAyamLadaHitam.png',
+		gambarBahan: [
+			"src/assets/bahanMakanan/Yogurt.png",
+			"src/assets/bahanMakanan/Kiwi.png",
+			"src/assets/bahanMakanan/Strawberry.png",
+			"src/assets/bahanMakanan/Raspberry.png"
+		],
+		langkah: [
+			"Tumis dada ayam tanpa minyak hingga berubah warna",
+			"Tuang saus lada hitam, tuang air secukupnya. Masak hingga matang",
+			"Masukan cabai dan brokoli. Masak sebentar, masukan bawang bombay",
+			"Masak hingga kuah mengental"
+		]
+	},
+	{
+		id: 8,
+		nama: 'Roti Gandum',
+		durasi: '10 menit',
+		porsi: '1 porsi (250 gram)',
+		bahan: ["Roti","Telur","Alpukat","Madu"],
+		jumlahBahan: ["2 buah","1 butir","1 buah","1/2 cangkir"],
+		bg: "src/assets/makanan/kecil/rotiGandum.png",
+		bgBesar: 'src/assets/makanan/besar/brokoliAyamLadaHitam.png',
+		gambarBahan: [
+			"src/assets/bahanMakanan/Toast.png",
+			"src/assets/bahanMakanan/EasterEggs.png",
+			"src/assets/bahanMakanan/Avocado.png",
+			"src/assets/bahanMakanan/Honey.png"
+		],
+		langkah: [
+			"Tumis dada ayam tanpa minyak hingga berubah warna",
+			"Tuang saus lada hitam, tuang air secukupnya. Masak hingga matang",
+			"Masukan cabai dan brokoli. Masak sebentar, masukan bawang bombay",
+			"Masak hingga kuah mengental"
 		]
 	},
 ]

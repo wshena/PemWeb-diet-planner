@@ -10,6 +10,13 @@ function ResepPageLanjutan() {
   )
 }
 
+// const langkahLangkah = [];
+// ResepMakanan.forEach((element) => {
+// 	langkahLangkah.push(
+// 		element.langkah
+// 	)
+// })
+
 const ResepMakananLanjutan = [];
 {ResepMakanan.forEach((element) => {
 	let langkah = element.langkah;

@@ -16,9 +16,7 @@ function HiitPembakarLemak() {
             </div>
             <div className="button">
               <p>{olahraga[2].deskripsi}</p>
-              <a href="#">
                 <button type="submit">Mulai</button>
-              </a>
             </div>
           </div>
         </div>

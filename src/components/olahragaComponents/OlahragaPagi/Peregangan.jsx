@@ -16,9 +16,7 @@ function Peregangan() {
             </div>
             <div className="button">
               <p>{olahraga[1].deskripsi}</p>
-              <a href="#">
                 <button type="submit">Mulai</button>
-              </a>
             </div>
           </div>
         </div>
