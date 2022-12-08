@@ -1,19 +1,56 @@
+import React, { useState, useRef, useEffect } from 'react'
+import Popup from 'reactjs-popup';
 
-import React, { useState, Component } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
 import ORI1 from '../../../assets/OR1.png'
-
 import {olahraga} from '../../../data/data'
 
 function OlahragaPagi() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-  const initModal = () => {
-    return invokeModal(!false)
+  const Ref = useRef(null)
+  const [timer, setTimer] = useState('00:00');
+  const getTimeRemaining = (e) => {
+    const total = Date.parse(e) - Date.parse(new Date());
+    const seconds = Math.floor((total / 1000) % 60);
+    const minutes = Math.floor((total / 1000 / 60) % 60);
+    return {
+        total, minutes, seconds
+    };
   }
+  const startTimer = (e) => {
+    let { total, minutes, seconds } = getTimeRemaining(e);
+    if (total >= 0) {
+        setTimer(
+            (minutes > 9 ? minutes : '0' + minutes) + ':'
+            + (seconds > 9 ? seconds : '0' + seconds)
+        )
+    }
+  }
+  const clearTimer = (e) => {
+    setTimer('00:30');
+    if (Ref.current) clearInterval(Ref.current);
+    const id = setInterval(() => {
+        startTimer(e);
+    }, 1000)
+    Ref.current = id;
+  }
+  const getDeadTime = () => {
+    let deadline = new Date();
+
+    deadline.setSeconds(deadline.getSeconds() + 0);
+    return deadline;
+  }
+  useEffect(() => {
+    clearTimer(getDeadTime());
+  }, []);
+  const onClickReset = () => {
+    clearTimer(getDeadTime());
+  }
+
+  let index = 0;
+  const addIndex = (index) => {
+    index += 1;
+    console.log(index)
+  } 
+
   return (
     <>
     <div className="container">
@@ -27,7 +64,24 @@ function OlahragaPagi() {
             </div>
             <div className="button">
               <p>{olahraga[0].deskripsi}</p>
-              <button type="submit">Mulai</button>
+              <Popup trigger={<button className="button"> Mulai </button>} modal nested>
+                {close => (
+                  <>
+                    <div className="modal">
+                      <button className="close" onClick={close}>
+                        &times;
+                      </button>
+                      <div className="header"> {olahraga[0].nama} </div>
+                      <div className="content" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+                        {olahragaCards[index]}
+                        <p>{timer}</p>
+                        <button onClick={onClickReset} style={{padding: '5px', marginTop: '10px'}}>Reset</button>
+                        <button onClick={addIndex(index)} style={{padding: '5px', marginTop: '10px'}}>Next</button>
+                      </div>
+                    </div>
+                    </>
+                )}
+              </Popup>
             </div>
           </div>
         </div>
@@ -48,6 +102,27 @@ function OlahragaPagi() {
 }
 
 export default OlahragaPagi
+
+// const olahragaCard = (index, timer, onClickReset) => {    
+//   return (
+//     <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>
+//       <h3>{olahraga[0].instruksi[index].nama}</h3>
+//       <img src={olahraga[0].instruksi[index].gambar} alt={olahraga[0].instruksi[index].nama} />
+//       <p>{timer}</p>
+//       <button onClick={onClickReset} style={{padding: '5px', marginTop: '10px'}}>Reset</button>
+//     </div>
+//   )
+// }
+
+const olahragaCards =[];
+{olahraga[0].instruksi.forEach((item) => {
+  olahragaCards.push(
+    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>
+      <h3>{item.nama}</h3>
+      <img src={item.gambar} alt={item.nama} />      
+    </div>
+  )
+})}
 
 const instructionItems = [];
 {olahraga[0].instruksi.forEach((item) => {
