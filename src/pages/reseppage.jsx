@@ -16,20 +16,23 @@ function ResepPage() {
       </div>
     </div>
 
-    <div className='container'>
+    {/* <div className='container'>
       <div className="searchBox-wrappper">
         <div className="searchBox">
           <button type="submit"> <img src={searchIcons} alt="search" /> </button>
-          <input type="search" name="search-form" id="search-form" placeholder='Cari Resep' autoComplete='false' />
+          <input type="search" name="search-form" id="search-form" placeholder='Cari Resep' autoComplete='false' value={searchValue} onChange={e => setSearchValue(e.target.value)}/>
         </div>
       </div>
-    </div>
+    </div> */}
     
     {/* Resep Cards */}
     <div className="container">
-      <div className="recipe-cards">
-
-      {cards}
+      <a href="/resepLanjutan" style={{
+        // textDecoration: 'none',
+        color: 'black'
+      }}>Lihat Semua</a>
+      <div className="recipe-cards" style={{marginTop: '30px',}}>
+        {cards}
       </div>
     </div>
     </>
@@ -39,46 +42,46 @@ function ResepPage() {
 export default ResepPage
 
 const cards = [];
-  {ResepMakanan.forEach((element) => {
-        cards.push(
-        <div className="card">
-          <div className="card-image"> <img src={element.bg} alt={element.nama} /> </div>
-          <div className="card-content">
-            <div className="card-title">
-              <div className="nama">
-                <h1>{element.nama}</h1>
-                <p>{element.porsi}</p>
-              </div>
-              <p>{element.durasi}</p>
-            </div>
-            <p style={{marginBottom: '10px'}}>Bahan-bahan</p>
-            <div className="bahan-bahan" style={{marginBottom: '20px'}}>
-                <div className="bahan">
-                  <img src={element.gambarBahan[0]} alt="bahan-makanan" />
-                  <p>{element.bahan[0]}</p>
-                  <p>{element.jumlahBahan[0]}</p>
-                </div>
-              <div className="bahan">
-                <img src={element.gambarBahan[1]} alt="bahan-makanan" />
-                <p>{element.bahan[1]}</p>
-                <p>{element.jumlahBahan[1]}</p>
-              </div>
-              <div className="bahan">
-                <img src={element.gambarBahan[2]} alt="bahan-makanan" />
-                <p>{element.bahan[2]}</p>
-                <p>{element.jumlahBahan[2]}</p>
-              </div>
-              <div className="bahan">
-                <img src={element.gambarBahan[3]} alt="bahan-makanan" />
-                <p>{element.bahan[3]}</p>
-                <p>{element.jumlahBahan[3]}</p>
-              </div>
-            </div>
-            <div className="link">
-              <a href="/resepLanjutan">Lihat Detail</a>
-            </div>
-          </div>
+for (let index = 0; index < ResepMakanan.length; index++) {
+  cards.push(
+    <div className="card">
+    <div className="card-image"> <img src={ResepMakanan[index].bg} alt={ResepMakanan[index].nama} /> </div>
+    <div className="card-content">
+      <div className="card-title">
+        <div className="nama">
+          <h1>{ResepMakanan[index].nama}</h1>
+          <p>{ResepMakanan[index].porsi}</p>
         </div>
-        )
-
-  })}
+        <p>{ResepMakanan[index].durasi}</p>
+      </div>
+      <p style={{marginBottom: '10px'}}>Bahan-bahan</p>
+      <div className="bahan-bahan" style={{marginBottom: '20px'}}>
+          <div className="bahan">
+            <img src={ResepMakanan[index].gambarBahan[0]} alt="bahan-makanan" />
+            <p>{ResepMakanan[index].bahan[0]}</p>
+            <p>{ResepMakanan[index].jumlahBahan[0]}</p>
+          </div>
+        <div className="bahan">
+          <img src={ResepMakanan[index].gambarBahan[1]} alt="bahan-makanan" />
+          <p>{ResepMakanan[index].bahan[1]}</p>
+          <p>{ResepMakanan[index].jumlahBahan[1]}</p>
+        </div>
+        <div className="bahan">
+          <img src={ResepMakanan[index].gambarBahan[2]} alt="bahan-makanan" />
+          <p>{ResepMakanan[index].bahan[2]}</p>
+          <p>{ResepMakanan[index].jumlahBahan[2]}</p>
+        </div>
+        <div className="bahan">
+          <img src={ResepMakanan[index].gambarBahan[3]} alt="bahan-makanan" />
+          <p>{ResepMakanan[index].bahan[3]}</p>
+          <p>{ResepMakanan[index].jumlahBahan[3]}</p>
+        </div>
+      </div>
+      <div className="link">
+        <a href={"/resepMakanan"+ index}>Lihat Detail</a>
+      </div>
+    </div>
+  </div>
+  )
+  
+}

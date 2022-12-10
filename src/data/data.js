@@ -19,7 +19,7 @@ export const ResepMakanan = [
 		],
 		bahanSaos : [
 			"200 gram mayonais",
-			"2sdm cincangan acar",
+			"2 sdm cincangan acar",
 			"2 sdm paprika cincang",
 			"2 sdm cuca apel",
 			"1 siung bawang putih cicang halus",
@@ -37,15 +37,16 @@ export const ResepMakanan = [
 		nama: 'Oatmeal Pancake',
 		durasi: '10 menit',
 		porsi: '1 porsi (4 pcs)',
-		bahan: ["Oatmeal","Telur","Gula Pasir","Gula Pasir"],
-		jumlahBahan: ["100 gram","1 butir","2 sdm","2 sdm"],
+		bahan: ["Oatmeal","Telur","Gula Pasir","Pisang", "Baking Powder"],
+		jumlahBahan: ["100 gram","1 butir","2 sdt","2 buah","1/2 sdt"],
 		bg: "/src/assets/makanan/kecil/pancake.png",
 		bgBesar: 'src/assets/makanan/besar/oatmealPancake.png',
 		gambarBahan: [
 			"/src/assets/bahanMakanan/Porridge.png",
 			"/src/assets/bahanMakanan/EasterEggs.png",
 			"/src/assets/bahanMakanan/SugarSack.png",
-			"/src/assets/bahanMakanan/BottleOfWater.png"
+			"src/assets/bahanMakanan/Banana.png",
+			"/src/assets/bahanMakanan/SugarSack.png",
 		],
 		langkah: [
 			"Campurkan oatmeal, pisang, telur, dan baking powder, lalu blender hingga halus.",
@@ -59,15 +60,17 @@ export const ResepMakanan = [
 		nama: 'Mashed Potato',
 		durasi: '20 menit',
 		porsi: '1 porsi (500 gram)',
-		bahan: ["Kentang","Telur","Garam","Gula Pasir"],
-		jumlahBahan: ["200 gram","1 butir","1/2 sdm","2 sdm"],
+		bahan: ["Kentang","Telur","Garam","Gula Pasir","Susu","Merica Bubuk"],
+		jumlahBahan: ["200 gram","1 butir","1/2 sdm","2 sdm","125 ml", "1/2 sdt"],
 		bg: '/src/assets/makanan/kecil/mashedPotato.png',
 		bgBesar: 'src/assets/makanan/besar/meshPotato.png',
 		gambarBahan: [
 			"/src/assets/bahanMakanan/Potato.png",
 			"/src/assets/bahanMakanan/EasterEggs.png",
 			"/src/assets/bahanMakanan/SpoonOfSugar.png",
-			"/src/assets/bahanMakanan/SugarSack.png"
+			"/src/assets/bahanMakanan/SugarSack.png",
+			"src/assets/bahanMakanan/Milk Carton.png",
+			"src/assets/bahanMakanan/Spice.png"
 		],
 		langkah: [
 			"Kupas kentang lalu potong-potong. Rebus hingga empuk sekitar 15-20 menit. Angkat dan tiriskan. Langsung haluskan kentang dengan potato masher atau ulekan",
@@ -84,7 +87,7 @@ export const ResepMakanan = [
 		bahan: ["Ayam","Tomat","Selada","Mentimun"],
 		jumlahBahan: ["200 gram","1 butir","1/2 sdm","2 sdm"],
 		bg: 'src/assets/makanan/kecil/chickenSalad.png',
-		bgBesar: 'src/assets/makanan/besar/brokoliAyamLadaHitam.png',
+		bgBesar: 'src/assets/makanan/kecil/chickenSalad.png',
 		gambarBahan: [
 			"/src/assets/bahanMakanan/Chicken.png",
 			"/src/assets/bahanMakanan/Tomato.png",
@@ -128,7 +131,7 @@ export const ResepMakanan = [
 		bahan: ["Bayam","Bawang Putih","Bawang Merah","Cabai Rawit"],
 		jumlahBahan: ["1 ikat","3 siung","4 siung","1 buah"],
 		bg: "src/assets/makanan/kecil/tumisBayam.png",
-		bgBesar: 'src/assets/makanan/besar/brokoliAyamLadaHitam.png',
+		bgBesar: 'src/assets/makanan/kecil/tumisBayam.png',
 		gambarBahan: [
 			"src/assets/bahanMakanan/Spinach.png",
 			"src/assets/bahanMakanan/Onion.png",
@@ -150,7 +153,7 @@ export const ResepMakanan = [
 		bahan: ["Yogurt","Kiwi","Stroberi","Rasberry"],
 		jumlahBahan: ["180 ml","1 buah","1 buah","1/2 cangkir"],
 		bg: "src/assets/makanan/kecil/serealBuah.png",
-		bgBesar: 'src/assets/makanan/besar/brokoliAyamLadaHitam.png',
+		bgBesar: 'src/assets/makanan/kecil/serealBuah.png',
 		gambarBahan: [
 			"src/assets/bahanMakanan/Yogurt.png",
 			"src/assets/bahanMakanan/Kiwi.png",
@@ -172,7 +175,7 @@ export const ResepMakanan = [
 		bahan: ["Roti","Telur","Alpukat","Madu"],
 		jumlahBahan: ["2 buah","1 butir","1 buah","1/2 cangkir"],
 		bg: "src/assets/makanan/kecil/rotiGandum.png",
-		bgBesar: 'src/assets/makanan/besar/brokoliAyamLadaHitam.png',
+		bgBesar: 'src/assets/makanan/kecil/rotiGandum.png',
 		gambarBahan: [
 			"src/assets/bahanMakanan/Toast.png",
 			"src/assets/bahanMakanan/EasterEggs.png",

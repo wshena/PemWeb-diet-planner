@@ -5,7 +5,7 @@ function Navbar() {
   return (
 		<nav className="nav">
     	<div className="container">
-				<a href='#' className="nav-logo">
+				<a href='/home' className="nav-logo">
 					<img src={Logo} alt="diet-yuk-logo" width='100px' height='50px'/>
 				</a>
 
@@ -44,8 +44,7 @@ const link = [
 	"program",
 	"olahraga",
 	"resep",
-	"nutrision Tracker",
-	"komunitas"
+	"profile",
 ]
 
 const generateLink = [
@@ -53,8 +52,7 @@ const generateLink = [
 	"/program",
 	"/olahraga",
 	"/resep",
-	"/nutrision Tracker",
-	"/komunitas"
+	"/profile",
 ]
 
 function closeButton() {

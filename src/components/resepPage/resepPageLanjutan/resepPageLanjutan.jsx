@@ -4,7 +4,10 @@ import {ResepMakanan} from '../../../data/data'
 function ResepPageLanjutan() {
   return (
     <div className="container">
-			<h1 style={{fontSize: '30px', marginBottom: '50px'}}>Resep Makanan</h1>
+			<div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px'}}>
+				<h1 style={{fontSize: '30px'}}>Resep Makanan</h1>
+				<a href="/resep" style={{color: 'black', textDecoration: 'none', fontSize: '18px'}}>Kembali</a>
+			</div>
 			{ResepMakananLanjutan}
 		</div>
   )
@@ -20,6 +23,7 @@ function ResepPageLanjutan() {
 const ResepMakananLanjutan = [];
 {ResepMakanan.forEach((element) => {
 	let langkah = element.langkah;
+	let bahanSaus = element.bahanSaos;
 
 	ResepMakananLanjutan.push(
 		<div className="resepWrapper">
@@ -37,6 +41,7 @@ const ResepMakananLanjutan = [];
 					<div className="ingredients">
 						<div className="ingredient">
 							<img src={element.gambarBahan[0]} alt="bahan" />
+							<p>{element.bahan[0]}</p>
 							<p>{element.jumlahBahan[0]}</p>
 						</div>
 						<div className="ingredient">
