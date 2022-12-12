@@ -1,0 +1,30 @@
+.profile-wrapper {
+  width: 75%;
+	padding: 20px 50px;
+	border-radius: 20px;
+	box-shadow: 0px 3px 31px -6px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 3px 31px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 31px -6px rgba(0,0,0,0.75);
+
+	.profile-img {
+		display: flex;
+		align-items: center;
+		.img {
+			width: 100px;
+			height: 100px;
+			margin-right: 20px;
+			border-radius: 50%;
+			background-color: #eee;
+		}
+		.button {
+			padding: 10px 15px;
+			margin-top: 10px;
+			background-color: #F27405;
+			color: white;
+			border: none;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

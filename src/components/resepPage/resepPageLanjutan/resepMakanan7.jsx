@@ -50,11 +50,6 @@ function ResepMaknanan7() {
                             <p>{ResepMakanan[7].bahan[4]}</p>
 							<p>{ResepMakanan[7].jumlahBahan[4]}</p>
 						</div>
-						<div className="ingredient">
-							<img src={ResepMakanan[7].gambarBahan[5]} alt="bahan" />
-                            <p>{ResepMakanan[7].bahan[5]}</p>
-							<p>{ResepMakanan[7].jumlahBahan[5]}</p>
-						</div>
 					</div>
 				</div>
 

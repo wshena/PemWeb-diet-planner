@@ -22,6 +22,7 @@ import ResepMaknanan5 from "./components/resepPage/resepPageLanjutan/resepMakana
 import ResepMaknanan6 from "./components/resepPage/resepPageLanjutan/resepMakanan6";
 import ResepMaknanan7 from "./components/resepPage/resepPageLanjutan/resepMakanan7";
 import ResepPageLanjutan from "./components/resepPage/resepPageLanjutan/resepPageLanjutan";
+import ProfilePage from "./pages/profilePage";
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="program" element={<ProgramPage />} />
         <Route path="olahraga" element={<OlahragaPage />} />
         <Route path="resep" element={<ResepPage />} />
+        <Route path="profile" element={<ProfilePage />} />
         <Route path="olahragaPagi" element={<OlahragaPagi />} />
         <Route path="peregangan" element={<Peregangan />} />
         <Route path="hiit" element={<HiitPembakarLemak />} />

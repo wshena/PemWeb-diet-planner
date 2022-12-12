@@ -84,21 +84,23 @@ export const ResepMakanan = [
 		nama: 'Chicken Salad',
 		durasi: '30 menit',
 		porsi: '1 porsi (450 gram)',
-		bahan: ["Ayam","Tomat","Selada","Mentimun"],
-		jumlahBahan: ["200 gram","1 butir","1/2 sdm","2 sdm"],
+		bahan: ["Ayam","Tomat","Selada","Mentimun", "Garam","Lada Hitam"],
+		jumlahBahan: ["200 gram","1 butir","1/2 sdm","2 sdm", "secukupnya","secukupnya"],
 		bg: 'src/assets/makanan/kecil/chickenSalad.png',
 		bgBesar: 'src/assets/makanan/kecil/chickenSalad.png',
 		gambarBahan: [
 			"/src/assets/bahanMakanan/Chicken.png",
 			"/src/assets/bahanMakanan/Tomato.png",
 			"/src/assets/bahanMakanan/Lettuce.png",
-			"/src/assets/bahanMakanan/Cucumber.png"
+			"/src/assets/bahanMakanan/Cucumber.png",
+			"src/assets/bahanMakanan/Spice.png",
+			"src/assets/bahanMakanan/Spice.png"
 		],
 		langkah: [
-			"Tumis dada ayam tanpa minyak hingga berubah warna",
-			"Tuang saus lada hitam, tuang air secukupnya. Masak hingga matang",
-			"Masukan cabai dan brokoli. Masak sebentar, masukan bawang bombay",
-			"Masak hingga kuah mengental"
+			"Pertama buat bahan untuk dressing, dengan mencampurkan 6 sdm olive oil, 3 sdm madu, 3 sdm air lemon serta secukupnya garam dan lada hitam.",
+			"Panggang ayam dengan wajan anti lengket hingga matang kecoklatan di masing-masing sisinya, kemudian sisihkan  ",
+			"Letakkan semua bahan sayur di mangkok lalu tuang dressing sedikit demi sedikit. ",
+			"Lalu tata sayuran di piring  dan letakkan ayam yang sudah di potong-potong di atasnya lalu siram dengan sisa dressingnya."
 		]
 	},
 	{
@@ -106,15 +108,16 @@ export const ResepMakanan = [
 		nama: 'Brokoli Ayam Lada Hitam',
 		durasi: '20 menit',
 		porsi: '1 porsi (450 gram)',
-		bahan: ["Ayam","Bombai","Brokoli","Cabai"],
-		jumlahBahan: ["70 gram","1/2 buah","1 buah","secukupnya"],
+		bahan: ["Ayam","Bombai","Brokoli","Cabai", "Saus"],
+		jumlahBahan: ["70 gram","1/2 buah","1 buah","secukupnya", "1 sachet"],
 		bg: "/src/assets/makanan/kecil/ayamBrokoli.png",
 		bgBesar: 'src/assets/makanan/besar/brokoliAyamLadaHitam.png',
 		gambarBahan: [
 			"/src/assets/bahanMakanan/Chicken.png",
 			"src/assets/bahanMakanan/Onion.png",
 			"src/assets/bahanMakanan/Broccoli.png",
-			"src/assets/bahanMakanan/ChiliPepper.png"
+			"src/assets/bahanMakanan/ChiliPepper.png",
+			"src/assets/bahanMakanan/Worcestershire Sauce.png"
 		],
 		langkah: [
 			"Tumis dada ayam tanpa minyak hingga berubah warna",
@@ -128,21 +131,22 @@ export const ResepMakanan = [
 		nama: 'Tumis Bayam',
 		durasi: '10 menit',
 		porsi: '1 porsi (4 pcs)',
-		bahan: ["Bayam","Bawang Putih","Bawang Merah","Cabai Rawit"],
-		jumlahBahan: ["1 ikat","3 siung","4 siung","1 buah"],
+		bahan: ["Bayam","Bawang Putih","Bawang Merah","Cabai Rawit","Saus Tiram","Wijen Sangrai"],
+		jumlahBahan: ["1 ikat","3 siung","4 siung","1 buah","1 sdm","secukupnya"],
 		bg: "src/assets/makanan/kecil/tumisBayam.png",
 		bgBesar: 'src/assets/makanan/kecil/tumisBayam.png',
 		gambarBahan: [
 			"src/assets/bahanMakanan/Spinach.png",
 			"src/assets/bahanMakanan/Onion.png",
 			"src/assets/bahanMakanan/redOnion.png",
-			"src/assets/bahanMakanan/ChiliPepper.png"
+			"src/assets/bahanMakanan/ChiliPepper.png",
+			"src/assets/bahanMakanan/Worcestershire Sauce.png",
+			"src/assets/bahanMakanan/Black Sesame Seeds.png"
 		],
 		langkah: [
-			"Tumis dada ayam tanpa minyak hingga berubah warna",
-			"Tuang saus lada hitam, tuang air secukupnya. Masak hingga matang",
-			"Masukan cabai dan brokoli. Masak sebentar, masukan bawang bombay",
-			"Masak hingga kuah mengental"
+			"Rebus bayam selama kurang lebih 1 menit, lalu tiriskan.",
+			"Tumis bawang merah dan bawang putih cincang sampai harum.Masukkan bumbu lainnya. Aduk sebentar.",
+			"Masukkan bayam yang sudah direbus. Aduk sampai merata dengan bumbu. Sajikan.",
 		]
 	},
 	{
@@ -150,21 +154,22 @@ export const ResepMakanan = [
 		nama: 'Sereal Buah',
 		durasi: '10 menit',
 		porsi: '1 porsi (250 gram)',
-		bahan: ["Yogurt","Kiwi","Stroberi","Rasberry"],
-		jumlahBahan: ["180 ml","1 buah","1 buah","1/2 cangkir"],
+		bahan: ["Yogurt","Kiwi","Stroberi","Rasberry","Blueberry","Sereal Cornflakes"],
+		jumlahBahan: ["180 ml","1 buah","1 buah","1/2 cangkir","secukupnya","150 gr"],
 		bg: "src/assets/makanan/kecil/serealBuah.png",
 		bgBesar: 'src/assets/makanan/kecil/serealBuah.png',
 		gambarBahan: [
 			"src/assets/bahanMakanan/Yogurt.png",
 			"src/assets/bahanMakanan/Kiwi.png",
 			"src/assets/bahanMakanan/Strawberry.png",
-			"src/assets/bahanMakanan/Raspberry.png"
+			"src/assets/bahanMakanan/Raspberry.png",
+			"src/assets/bahanMakanan/Blueberries.png",
+			"src/assets/bahanMakanan/Cereal.png"
 		],
 		langkah: [
-			"Tumis dada ayam tanpa minyak hingga berubah warna",
-			"Tuang saus lada hitam, tuang air secukupnya. Masak hingga matang",
-			"Masukan cabai dan brokoli. Masak sebentar, masukan bawang bombay",
-			"Masak hingga kuah mengental"
+			"Potong buah-buahan. ",
+			"Masukan yogurt ke dalam wadah. ",
+			"Tata buah di atas yougurt dan taburkan sereal cronflakes diatasnya.",
 		]
 	},
 	{
@@ -172,7 +177,7 @@ export const ResepMakanan = [
 		nama: 'Roti Gandum',
 		durasi: '10 menit',
 		porsi: '1 porsi (250 gram)',
-		bahan: ["Roti","Telur","Alpukat","Madu"],
+		bahan: ["Roti","Telur","Alpukat","Madu","Mentega"],
 		jumlahBahan: ["2 buah","1 butir","1 buah","1/2 cangkir"],
 		bg: "src/assets/makanan/kecil/rotiGandum.png",
 		bgBesar: 'src/assets/makanan/kecil/rotiGandum.png',
@@ -180,13 +185,14 @@ export const ResepMakanan = [
 			"src/assets/bahanMakanan/Toast.png",
 			"src/assets/bahanMakanan/EasterEggs.png",
 			"src/assets/bahanMakanan/Avocado.png",
-			"src/assets/bahanMakanan/Honey.png"
+			"src/assets/bahanMakanan/Honey.png",
+			"src/assets/bahanMakanan/Rectangle.png"
 		],
 		langkah: [
-			"Tumis dada ayam tanpa minyak hingga berubah warna",
-			"Tuang saus lada hitam, tuang air secukupnya. Masak hingga matang",
-			"Masukan cabai dan brokoli. Masak sebentar, masukan bawang bombay",
-			"Masak hingga kuah mengental"
+			"Panggang roti menggunakan pemanggang roti atau dapat menggunakan wajan, tambahkan mentega di atas roti. Panggang  samapai warnanya kecokelatan jangan sampai hangus.",
+			"Belah alpukat kemudian keluarkan dagingnya dan hancurkan, tambahkan madu secukupnya",
+			"Rebus telur beberapa menit sampai telur dirasa sudah setengah matang",
+			"Oleskan alpukat diatas roti panggang, tambahkan telur . Sajikan"
 		]
 	},
 ]
