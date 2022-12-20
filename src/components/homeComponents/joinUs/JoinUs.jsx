@@ -7,7 +7,7 @@ function JoinUs() {
 			<div className="joinUs-text">
 				<h3>interested to join?</h3>
 				<h1>Get your diet program and start your journey!</h1>
-				<a href="#"> <button className='btn btn-register'>Register</button> </a>
+				<a href="/register"> <button className='btn btn-register'>Register</button> </a>
 			</div>
 			<div className="joinUs-image" style={{
 				backgroundImage : `url(${bg})`,
