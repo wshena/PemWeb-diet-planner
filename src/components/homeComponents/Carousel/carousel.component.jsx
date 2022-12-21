@@ -13,15 +13,15 @@ function CarouselComponent() {
     <div className="carousel container">
 			<div className="top-text">
 				<div className="heading">
-					<h1>Your next healthy life, made posible by Diet Planner!</h1>
+          <h1>Hidup sehat anda dapat terwujud dengan Diet Planner!</h1>
 				</div>
 				<div className="paragraf">
-					<h1>Share your experience</h1>
-					<p>Share your experience using our program, so others can also have a healthy life.</p>
+					<h1>Bagikan pengalaman anda</h1>
+          <p>Bagikan pengalaman anda selama menjalankan program diet kami. Selain anda, orang lain akan mendapatkan hidup sehat seperti anda.</p>
 				</div>
 				<div className="paragraf">
-					<h1>Recomend to other</h1>
-					<p>Recomend this website to your friends, so your friend can also have a healthy life.</p>
+					<h1>Rekomendasikan ke orang yang tersayang</h1>
+          <p>Rekomendasikan website ini ke orang tersayang anda. Sehingga tak hanya anda, orang terkasih anda juga akan mendapatkan pola hidup sehat.</p>
 				</div>
 			</div>
 

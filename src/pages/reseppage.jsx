@@ -8,11 +8,12 @@ function ResepPage() {
   return (
     <>
     <div className="jumbotron container d-center" style={{
-      backgroundImage: `url(${bg})`
+      backgroundImage: `url(${bg})`,
+      opacity: '0.7'
     }}>
       <div className="jumbotron-content text-center">
-        <h1>Cari Resep Sehatmu</h1>
-        <h2>Terdapat berbagai resep makanan yang bisa kalian ikuti</h2>
+        <h1 style={{color: 'black'}}>Cari Resep Sehatmu</h1>
+        <h2 style={{color: 'black'}}>Terdapat berbagai resep makanan yang bisa kalian ikuti</h2>
       </div>
     </div>
 

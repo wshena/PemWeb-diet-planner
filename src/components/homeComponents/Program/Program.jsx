@@ -6,9 +6,9 @@ import food3 from '../../../assets/food3.png'
 function Program() {
   return (
     <div className="program container">
-			<h1 className="title">Our Program</h1>
+			<h1 className="title">Program Kami</h1>
 			<p className="titleDescription">
-				We provide you with our best diet program
+				Kami menyediakan anda dengan program diet terbaik
 			</p>
 
 			<div className="cards">

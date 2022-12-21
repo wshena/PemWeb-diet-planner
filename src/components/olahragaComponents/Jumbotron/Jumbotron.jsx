@@ -6,8 +6,8 @@ function Jumbotron() {
         backgroundImage: `url(${bg})`,
     }}>
       <div className="jumbotron-content text-end">
-				<h1 className='text-white'>Begin your journey by choosing our exercise program!</h1>
-				<p className='text-white'>We provide exercise programs according to the conditions and desires chosen by you</p>
+        <h1 className='text-white'>Mulai petualangan anda dengan memilih program olahraga!</h1>
+        <p className='text-white'>Kami menyediakan pilihan program olahraga agar anda dapat menyesuaikan dengan kebutuhan dan kemauan anda</p>
 			</div>
     </div>
   )

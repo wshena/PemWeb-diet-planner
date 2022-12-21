@@ -17,6 +17,7 @@ function ProfilePage() {
 						<h3>Email</h3> */}
 						<h3>{user.name}</h3>
 						<h3>{user.email}</h3>
+						{/* {display(user.name, user.email)} */}
 						<button onClick={logout} className="button">Log Out</button>
 					</div>
 				</div>
@@ -26,3 +27,20 @@ function ProfilePage() {
 }
 
 export default ProfilePage
+
+const display = (name, email) => {
+	if (name != null && email != null) {
+		return (
+			<>
+			<h3>{user.name}</h3>
+			<h3>{user.email}</h3>
+			</>
+		)
+	}
+	return (
+		<>
+			<h3>Nama</h3>
+			<h3>Email</h3>
+		</>
+	)
+}
