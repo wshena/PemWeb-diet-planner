@@ -13,6 +13,8 @@ function ProfilePage() {
 						<img src="src/assets/Circled User Male Skin Type 7.png" alt="profile" />
 					</div>
 					<div>
+						{/* <h3>Name</h3>
+						<h3>Email</h3> */}
 						<h3>{user.name}</h3>
 						<h3>{user.email}</h3>
 						<button onClick={logout} className="button">Log Out</button>

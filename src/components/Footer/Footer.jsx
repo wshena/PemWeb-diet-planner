@@ -7,6 +7,14 @@ function Footer() {
       <div className="footer-image">
 				<img src={logo} alt="logo" />
 			</div>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center'
+      }}>
+        <img src="src/assets/copyright.png" alt="copyright" width='20px' height='20px'/>
+        <p style={{marginLeft: '10px'}}>Diet Planner by Kelompok 6</p>
+      </div>
     </footer>
   )
 }
