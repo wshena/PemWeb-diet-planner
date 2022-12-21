@@ -1,5 +1,6 @@
 import {
   BrowserRouter,
+  Navigate,
   Routes,
   Route
 } from "react-router-dom";
@@ -23,9 +24,14 @@ import ResepMaknanan6 from "./components/resepPage/resepPageLanjutan/resepMakana
 import ResepMaknanan7 from "./components/resepPage/resepPageLanjutan/resepMakanan7";
 import ResepPageLanjutan from "./components/resepPage/resepPageLanjutan/resepPageLanjutan";
 import ProfilePage from "./pages/profilePage";
+import Register from "./loginSystem/Register/Register";
+import Login from "./loginSystem/Login/Login";
+
+import {useContext} from 'react'
+import {UserContext} from './loginSystem/context/UserContext';
 
 function App() {
-
+  const {user} = useContext(UserContext); 
   return (
     <>
       <BrowserRouter>
@@ -48,6 +54,17 @@ function App() {
         <Route path="resepMakanan5" element={<ResepMaknanan5 />} />
         <Route path="resepMakanan6" element={<ResepMaknanan6 />} />
         <Route path="resepMakanan7" element={<ResepMaknanan7 />} />
+        
+        {!user && (
+              <>
+              <Route path="/login" element={<Login/>} />
+              <Route path="/signup" element={<Register/>} />
+              </>
+            )}
+        { user && <Route path="/" element={<ProfilePage/>} /> }
+        <Route path="*" element={<Navigate to={user ? '/':'/login'} />} />
+        <Route path="register" element={<Register />} />
+        <Route path="login" element={<Login />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from "react"
+import {useContext} from 'react'
+import {UserContext} from '../loginSystem/context/UserContext'
 
 function ProfilePage() {
-  return (
+	const {user, logout} = useContext(UserContext);
+
+	return (
     <div className="container" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
 			<div className="profile-wrapper">
 				<div className="profile-img">
-					<div className="img"></div>
+					<div className="img">
+						<img src="src/assets/Circled User Male Skin Type 7.png" alt="profile" />
+					</div>
 					<div>
-						<h3>Vitto Scalleta</h3>
-						<button className="button">Ubah Foto</button>
+						<h3>{user.name}</h3>
+						<h3>{user.email}</h3>
+						<button onClick={logout} className="button">Log Out</button>
 					</div>
 				</div>
 			</div>
