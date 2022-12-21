@@ -25,10 +25,10 @@ const cardsComponnetArray = [
 		backgroundImage : `url(${cardBg1})`
 	}}>
 		<div className="card-content">
-			<div className="card-logo">LOGO</div>
+			<div className="card-logo">1</div>
 			<div className="card-text">
 				<h1>Nutrition Strategies</h1>
-				<p>Finding a workout is as easy as scrolling down, picking out the session that matches your goals, andgetting your butt to the gym!</p>
+				<p>Finding a best recipe for your diet is as easy as scrolling down, picking out the recipe that matches your desire, and getting your butt to the kitchen!</p>
 			</div>
 		</div>
 	</div>,
@@ -37,9 +37,9 @@ const cardsComponnetArray = [
 		backgroundImage : `url(${cardBg2})`
 	}}>
 		<div className="card-content">
-			<div className="card-logo">LOGO</div>
+			<div className="card-logo">2</div>
 			<div className="card-text">
-				<h1>Nutrition Strategies</h1>
+				<h1>Workout Strategies</h1>
 				<p>Finding a workout is as easy as scrolling down, picking out the session that matches your goals, andgetting your butt to the gym!</p>
 			</div>
 		</div>
@@ -49,7 +49,7 @@ const cardsComponnetArray = [
 		backgroundImage : `url(${cardBg3})`
 	}}>
 		<div className="card-content">
-			<div className="card-logo">LOGO</div>
+			<div className="card-logo">3</div>
 			<div className="card-text">
 				<h1>Nutrition Strategies</h1>
 				<p>Finding a workout is as easy as scrolling down, picking out the session that matches your goals, andgetting your butt to the gym!</p>
