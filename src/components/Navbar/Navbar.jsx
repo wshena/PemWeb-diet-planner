@@ -40,11 +40,11 @@ function Navbar() {
 export default Navbar
 
 const link = [
-	"home",
+	"beranda",
 	"program",
 	"olahraga",
 	"resep",
-	"profile",
+	"profil",
 ]
 
 const generateLink = [
